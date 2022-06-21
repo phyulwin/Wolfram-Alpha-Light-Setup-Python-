@@ -6,17 +6,22 @@ import wolframalpha
 client = wolframalpha.Client(os.environ['APP_ID'])
 
 def output(input):
-  res = client.query(input)
-  print(next(res.results).text)
-
-#Input questions to the Wolfram Knowledgebase 
+  print("Answer to "+str(input)+"\n")
+  try:
+    res = client.query(input)
+    print(next(res.results).text)
+    print("\n")
+    return
+  except:
+    return output("Provide a different question: ")
+  
+#Ask questions to the Wolfram Knowledgebase. 
 output("2+2")
 
 output("Volume of a Cylinder")
 
-output("Range[10]")
+output("cost of 300 kWh of electricity in Minnesota")
 
-output("NestList[f, x, 5]")
+output("50 lb wet dog shaking frequency")
 
-output(input("ask a question:"))
-
+output(input("Ask a question: "))

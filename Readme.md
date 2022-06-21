@@ -1,9 +1,9 @@
 # Wolfram|Alpha Light Setup
-Access the [Wolfram Knowledgebase](www.wolframalpha.com) with Python. 
+Access the [Wolfram Knowledgebase](https://www.wolfram.com/knowledgebase/) with Python. 
 
 ## Configure Wolfram Client for Python
 
-To send queries to Wolfram|Alpha from your application, you need to request a unique AppID for your application. Get an AppID at [developer.wolframalpha.com](developer.wolframalpha.com). Save your AppID as a environment variable and name the key **APP_ID**. 
+To send queries to Wolfram|Alpha from your application, you need to request a unique AppID for your application. Get an AppID at [developer.wolframalpha.com](https://developer.wolframalpha.com/portal/myapps/). Save your AppID as a environment variable and name the key **APP_ID**. 
 
 
 ### External Resources
